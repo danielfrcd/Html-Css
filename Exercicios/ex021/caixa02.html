@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: rgb(28, 174, 211);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+                        
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.692);
+        }
+
+        h2 {
+            box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.692);
+        }
+
+        header {
+            margin: 30px;
+            padding: 30px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            border: 20px solid rgb(0, 110, 255);
+            background-color: rgb(3, 29, 68);
+        }
+
+        nav {
+            background-color: rgba(9, 62, 131, 0.877);
+            padding: 1px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.466);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(0, 110, 255);
+            color: white;
+            margin: 30px;
+            padding: 20px;
+        }
+
+        article {
+            background-color: rgb(3, 29, 68);
+            padding: 25px;
+        }
+
+        article > aside {
+            background-color: rgba(9, 62, 131, 0.877);
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        article > p {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.801);
+        }
+
+        aside > p {
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.801);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        footer {
+            background-color: rgba(9, 62, 131, 0.877);
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center ;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="filmes"></section>
+            <article>
+                <h1>Filmes</h1>
+                <h2>Megatubarao</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, temporibus! Illo corporis asperiores ad nulla fugiat voluptas assumenda eligendi quidem! Totam consectetur sed labore harum optio facere vel repudiandae vero!</p>
+            </article>
+        <section id="series"></section>
+            <article>
+                <h2>Eu sou a Lenda</h2>
+                    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae ea placeat incidunt illum nihil natus itaque dignissimos molestias soluta cum porro illo sit temporibus, quam, a iure dolore modi doloribus.</P>
+            </article>
+        <section id="documentarios"></section>
+            <article>
+                <h2>Vingadores</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, enim inventore? Quos alias inventore sint qui voluptate atque ut sequi, possimus iure, mollitia neque tempora. Sapiente, soluta sed. Perferendis, facere?</p>
+                <aside>
+                    <p>Filmes criados por Kevin Feige</p>
+                </aside>
+            </article>
+            <footer>
+                Desenvolvido por Daniel Freze Cordeiro
+            </footer>
+            <div id="bola">bola</div>
+    </main>
+</body>
+</html>
