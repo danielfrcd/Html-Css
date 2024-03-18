@@ -57,6 +57,10 @@ html, body {
     font-size: 2.5vw;
  }
 
+section > p {
+   padding-bottom: 2em;
+}
+
  /*
  padding top e bottom = cria um espaço em cada section na parte de cima e de baixo
  line height = espaçamento entre as linhas
@@ -71,12 +75,32 @@ html, body {
  section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
  }
+
+ /*
+ box shadow - inset : o inset é usado para criar uma sombra dentro da box
+ 
+ ack size - cover : usado para informar ao navegador que ele deve se certificar de que a imagem cobrirá sempre o contêiner inteiro 
+ 
+ back attachment - fixed :  usado para fazer o efeito paralex, fazendo com q a imagem n role junto com a pagina.*/
 
  section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.315);
+    text-shadow: 1px 1px 0px black;
+ }
+
+ section#img01 {
+   background-image: url('../imagens/background001.jpg');
+   background-position: right center;
+ }
+
+ section#img02 {
+   background-image: url('../imagens/background002.jpg');
  }
 
  footer {
