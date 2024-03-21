@@ -12,7 +12,10 @@
        table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
        }
+
+       /* position:relative = usado para conseguirmos tornar o cabeçalho fixo na hora da rolagem.*/
 
        td, th {
             border: 1px solid black;
@@ -20,27 +23,37 @@
        }
 
        caption {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 10px;
-        background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
        }
 
        thead, tfoot {
-        background-color: gray;
-        color: white;
+            background-color: gray;
+            color: white;
        }
 
+       thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+       }
+       
+       /*Linha de codigo usado para fazer com q o cabeçalho desça junto com a barra de rolagem, tornado mais facil a visualização dos titulos da tabela
+       
+       top -1px = o -1 pode ser usado como 0 tambem, aki usamos o -1 para n deixar uma brecha no topo do cabeçalho*/
+
        tbody > tr:nth-child(odd) { /*2n -1 */
-        background-color: rgb(39, 39, 221);
+            background-color: rgb(39, 39, 221);
         }
 
        tbody > tr:nth-child(even) { /* 2n*/
-        background-color: yellow
+            background-color: yellow
        }
 
        td.num {
-        text-align: right;
+            text-align: right;
        }
     </style>
 </head>
@@ -115,14 +128,74 @@
             <td>Goiás</td>
             <td class="num">7.018.354</td>
         </tr>
+        <tr>
+            <td>Friburgo</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Teresópolis</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Petropolis</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>São fidelis</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Campos dos goytacazes</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Olaria</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Niteroi</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Varginha</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Lumiar</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Bom jardim</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Sumidouro</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Boa esperança</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Conselheiro</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Mury</td>
+            <td class="num">7.018.354</td>
+        </tr>
+        <tr>
+            <td>Terra nova</td>
+            <td class="num">7.018.354</td>
+        </tr>
     </tbody>
-    <tfoot>
+     <tfoot>
         <tr>
             <th scope="row">Total de Habitantes</th>
             <td class="num">0000</td>
             <!-- scope - row = é usado para dados na mesma linha do titulo da tabela, o scope é usado nos metodos de pesquisa do google, n fazendo mudanças visuais no site. -->
         </tr>
     </tfoot>
-</table>
+    </table>
 </body>
 </html>
