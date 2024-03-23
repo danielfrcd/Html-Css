@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana amelia</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>mario</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>marcelo</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>paulo</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>marcela</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>otavio</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Jornalista</td>
+        </tr>
+    </table>
+</body>
+</html>
